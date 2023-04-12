@@ -1,0 +1,7 @@
+serverless create --template aws-nodejs --path nodeless
+serverless config credentials -o --provider aws --key=key --secret secret
+serverless deploy
+serverless invoke -f hello -l
+serverless remove
+
+npm install sharp
